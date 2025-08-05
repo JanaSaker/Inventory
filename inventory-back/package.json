@@ -1,0 +1,28 @@
+{
+  "name": "recipe",
+  "version": "1.0.0",
+  "description": "I HAVE ONE HOUR TO DO THIS WEBSITE USING NODEJS EXPRESSJS REACTJS AND MYSQL \r I want the user to be with 2 different roles admin and user \r a very advanced ai integration in the controller (Add real NLP using compromise, natural, or LangChain.\r Integrate OpenAI API for semantic recipe generation.\r Use embedding-based search (e.g., via vector DB)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "compromise": "^14.14.4",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "mysql2": "^3.14.3",
+    "openai": "^5.11.0",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "type": "commonjs"
+}
