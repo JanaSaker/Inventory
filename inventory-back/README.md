@@ -1,28 +1,90 @@
-I HAVE ONE HOUR TO DO THIS WEBSITE USING NODEJS EXPRESSJS REACTJS AND MYSQL 
-I want the user to be with 2 different roles admin and user 
-a very advanced ai integration in the controller (Add real NLP using compromise, natural, or LangChain.
-Integrate OpenAI API for semantic recipe generation.
-Use embedding-based search (e.g., via vector DB)
+# 📦 Project Name
 
-Modularity – Separates logic into smaller helper functions.
+A modern web application built with [React.js](https://reactjs.org/), [Node.js](https://nodejs.org/), Express, and MySQL.
+## 🚀 Features
 
-Natural Language Understanding – Supports basic synonym and semantic matching.
+- 🔐 Authentication (Register/Login)
+- 🛒 Inventory Management
+- 🧠 AI-powered search using OpenAI API
+- 🗂️ Role-based Access Control (Admin & User)
+- 🌐 Public viewing with restricted editing
+- 📸 Image upload support
+- 🌍 Multilingual interface
+- 🔎 Filter & search by all product fields
+- 🧩 Clean and scalable modular backend
 
-Scoring System – Ranks recipes by relevance.
+## 🛠️ Tech Stack
 
-Sanitization – Makes prompt safe and standardized.
+**Frontend**
+- React.js
+- Tailwind CSS v3.3.3
+- Axios
+- React Router DOM
 
-Scalable Design – Easier to plug in real AI or NLP later.)
-i want the search bar to be with filters of all the attributes in the table 
+**Backend**
+- Node.js
+- Express.js
+- MySQL (via Sequelize ORM)
+- JWT for Authentication
+- Multer for File Upload
+- OpenAI API & NLP for AI features
 
-anyone can enter the website but only the registered users can edit on it.
+## ⚙️ Installation
 
-let the design be responsive on all devices and be advanced design
+### 1. Clone the repository
+```bash
+git clone https://github.com/JanaSaker/Inventory.git
+cd JanaSakr
 
-add toast notifications
+2. Backend Setup
+cd inventory-back
+npm install
+Create a .env file in the inventory-back/ directory:
 
-add a language switcher
 
-add a loader
+PORT=5000
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=yourpassword
+DB_NAME=inventory_db
+JWT_SECRET=your_jwt_secret
+OPENAI_API_KEY=your_openai_api_key
 
+npx sequelize db:migrate
+node index.js
 
+3. Frontend Setup
+
+cd JanaSakr
+cd inventory-front
+npm install
+npm start
+
+🧪 API Endpoints
+Method	Endpoint	Description
+POST	/api/auth/register	Register new users
+POST	/api/auth/login	Login and get JWT token
+GET	/api/products	Fetch all products
+POST	/api/products	Add new product (admin)
+PUT	/api/products/:id	Update a product
+DELETE	/api/products/:id	Delete a product (admin)
+POST	/api/ai-search	AI-powered search
+
+🔐 Authentication & Roles
+JWT is used to protect private routes.
+
+Role middleware restricts admin/user access where needed.
+
+📦 Future Improvements
+📈 Product analytics dashboard
+
+💬 Live chatbot assistant
+
+📱 Mobile app integration
+
+🧾 Printable reports
+
+🙋‍♀️ Author
+Jana Sakr
+Full Stack Developer
+📧 [janasakr2000@gmail.com]

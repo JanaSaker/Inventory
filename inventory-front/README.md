@@ -1,6 +1,5 @@
 # 📦 Project Name
 
-<!-- Briefly describe your project -->
 A modern web application built with [React.js](https://reactjs.org/), [Node.js](https://nodejs.org/), Express, and MySQL.
 ## 🚀 Features
 
@@ -36,12 +35,11 @@ A modern web application built with [React.js](https://reactjs.org/), [Node.js](
 ```bash
 git clone https://github.com/JanaSaker/Inventory.git
 cd JanaSakr
-cd inventory-back
-2. Backend Setup
 
-cd backend
+2. Backend Setup
+cd inventory-back
 npm install
-Create a .env file in the backend/ directory:
+Create a .env file in the inventory-back/ directory:
 
 
 PORT=5000
@@ -61,6 +59,7 @@ cd JanaSakr
 cd inventory-front
 npm install
 npm start
+
 🧪 API Endpoints
 Method	Endpoint	Description
 POST	/api/auth/register	Register new users
